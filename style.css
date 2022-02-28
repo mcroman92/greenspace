@@ -1,0 +1,599 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    padding: 8px;
+    color: #D6BEF8;
+    border-radius: 8px;
+    margin: 0;
+    font-size: 64px;
+    font-family: 'Roboto Slab', serif;
+}
+
+p {
+    line-height: 1.5;
+}
+
+main {
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Banners */
+
+#banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2) url('https://i.ibb.co/16vBY08/banner.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: white;
+}
+
+/*chamomile banner*/
+
+#cham-banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2) url('https://i.ibb.co/6sFcgw8/chamomile-banner.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: white;
+}
+
+/*echinacea banner*/
+
+#echi-banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2) url('https://i.ibb.co/DkBs7CZ/echinacea-banner.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: white;
+}
+
+/*ginger banner*/
+
+#ginger-banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2) url('https://i.ibb.co/f2QyWJq/ginger-banner.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: white;
+}
+
+/*lavender banner*/
+#lav-banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2) url('https://i.ibb.co/b2RgVJ9/lavender-banner.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: white;
+}
+
+/*tumeric banner*/
+
+#tume-banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2) url('https://i.ibb.co/sJ0kHXC/turmeric-banner.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: white;
+}
+
+/*valerian banner*/
+
+#vale-banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2) url('https://i.ibb.co/0GkHFPW/valerian-banner.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: white;
+}
+
+
+
+/* navigation */
+
+nav {
+    height: 72px;
+    background: whitesmoke;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+nav a {
+    padding: 0 32px;
+    color: #374958;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #1A8C9F;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.nav .active {
+    color: #0FB3C4;
+}
+
+#logo-img {
+    display: flex;
+    height: 100%;
+    background: whitesmoke;
+    padding: 0 32px;
+    align-items: center;
+    color: #374958;
+    transition: .4;
+    size: 20px;
+
+}
+
+#logo-img img {
+    height: 100px;
+}
+
+
+
+#menu-icon {
+    height: 100%;
+    font-size: 28px;
+    padding: 0 4px;
+    color: black;
+    display: none;
+    align-items: center;
+}
+
+
+/* slideout menu */
+
+#slideout-menu {
+    display: none;
+    background: #374958;
+    z-index: 100;
+    position: fixed;
+    transition: 0.4;
+    margin-top: 72px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#slideout-menu ul {
+    list-style: none;
+    padding: 0 32px;
+}
+
+#slideout-menu ul li {
+    padding: 8px;
+}
+
+#slideout-menu a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+
+/* Sections */
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section-heading {
+    font-size: 32px;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    transition: all 0.4s;
+    display: inline-block;
+    padding: 4px 32px;
+}
+
+.section-heading:hover {
+    padding: 4px 48px;
+    background: #1A8C9F;
+}
+
+.para {
+    font-weight: 570;
+    font-size: large;
+
+}
+
+
+.desc-header {
+    font-size: 32px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 4px 32px;
+}
+
+/* card */
+
+.card-image {
+    transition: 0.4s;
+}
+
+.card-image:hover {
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.card .card-description {
+    padding: 0 8px;
+}
+
+/*Read more btn */
+
+.btn-readmore {
+    padding: 8px 24px;
+    border: 3px solid black;
+    transition: 0.4s;
+    display: inline-block;
+    margin-bottom: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background: white;
+}
+
+.btn-readmore:hover {
+    background: #1A8C9F;
+    text-decoration: none;
+    padding: 8px 64px 8px 24px;
+    color: white;
+}
+
+
+/* load more */
+#loadMore {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+#loadMore a {
+    background: #C02B39;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    padding: 10px 30px;
+    transition: all 0.25s ease-out;
+    -webkit-font-smoothing: antialiased;
+}
+
+#loadMore a:hover {
+    background-color: #1A8C9F;
+}
+
+/*Newsletter style */
+
+
+
+
+/* Footer */
+
+footer {
+    background: #374958;
+    padding: 8px;
+    color: #FFFFFC;
+    display: flex;
+}
+
+footer a {
+    color: white;
+}
+
+footer #left-footer {
+    flex: 1;
+    border-right: 1px solid black;
+    padding-left: 32px;
+
+}
+
+footer #left-footer :hover {
+    color: white;
+
+}
+
+footer #left-footer ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
+}
+
+footer #right-footer {
+    flex: 2;
+    padding: 8px;
+    text-align: center;
+
+}
+
+
+
+footer #social-media-footer a .fa-facebook footer #social-media-footer a .fa-twitter footer #social-media-footer a .fa-instagram {
+    color: white;
+    transition: 0.4s;
+}
+
+footer #social-media-footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+footer #social-media-footer ul li {
+    font-size: 48px;
+    padding: 16px;
+    transition: 0.4s;
+}
+
+footer #social-media-footer ul li:hover a .fa-facebook {
+    color: #3b5998;
+}
+
+footer #social-media-footer ul li:hover a .fa-twitter {
+    color: #1DA1F2;
+}
+
+footer #social-media-footer ul li:hover a .fa-instagram {
+    color: #fb3958;
+}
+
+/*contact page */
+#contact-us {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contact-us .container {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-us .container .box {
+    text-align: center;
+}
+
+#contact-us .container .box .icon .fa {
+    font-size: 80px;
+    cursor: pointer;
+}
+
+#contact-us .container .box .icon h3,
+#contact-us .container .box .icon h4 {
+    position: relative;
+    overflow: hidden;
+    font-weight: 400;
+    margin: 0;
+    padding: 2px 5px;
+    font-size: 24px;
+    transition-delay: 0.3333s;
+    color: transparent;
+}
+
+#contact-us .container .box .icon .fas:hover~h3,
+#contact-us .container .box .icon .fas:hover~h4 {
+    color: #000;
+}
+
+#contact-us .container .box .icon h4 {
+    font-weight: 600;
+    margin: 5px 0;
+    font-style: 30px;
+}
+
+#contact-us .container .box .icon h3:before,
+#contact-us .container .box .icon h4:before {
+    content: "_";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    background: #374958;
+    transition: 1s;
+}
+
+#contact-us .container .box .icon h4:before {
+    left: initial;
+    right: 100%;
+    background: #C02B39;
+}
+
+#contact-us .container .box .icon .fas:hover~h3:before {
+    left: -100%;
+}
+
+#contact-us .container .box .icon .fas:hover~h4:before {
+    left: initial;
+    right: -100%;
+}
+
+
+
+/* Media */
+
+@media(max-width: 900px) {
+    nav ul {
+        display: none;
+    }
+
+    #menu-icon {
+        display: flex;
+    }
+
+    #slideout-menu {
+        display: block;
+    }
+
+
+}
+
+@media (max-width: 719px) {
+    main {
+        width: 95%;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .card,
+    .card .card-image img {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer #left-footer {
+        flex: 1;
+        border-right: 0;
+        padding-left: 0;
+    }
+
+    footer #right-footer {
+        background: #eee;
+        color: black;
+    }
+
+    footer #right-footer a {
+        color: black
+    }
+
+    footer #social-media-footer a .fa-facebook,
+    footer #social-media-footer a .fa-twitter,
+    footer #social-media-footer a .fa-instagram {
+        color: black;
+        transition: 0.4s;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    #banner h3 {
+        font-size: 20px;
+    }
+
+    .card {
+        text-align: center;
+    }
+
+    #logo-img {
+        padding: 0;
+    }
+
+
+}
+
+@media (min-width: 720px) {
+    main {
+        width: 95%;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .card .card-image img {
+        width: 100%;
+    }
+
+
+}
+
+@media(min-width:1200px) {
+    main {
+        width: 85%;
+    }
+
+}

@@ -1,0 +1,156 @@
+/* Newsletter/Thank you style */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #79d2fc, #B378D3);
+}
+
+.container {
+    position: relative;
+    padding: 70px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 00 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+    color: #111;
+    margin-bottom: 45px;
+    line-height: 1em;
+    font-weight: 500;
+    padding-left: 10px;
+    border-left: 5px solid #9947ff;
+}
+
+.container .inputBox {
+    position: relative;
+    width: 300px;
+    height: 46px;
+    margin-bottom: 35px;
+}
+
+.container .inputBox:last-child {
+    margin-bottom: 0;
+}
+
+.container .inputBox input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid #111;
+    background: transparent;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    color: #111;
+    font-weight: 400;
+}
+
+.container .inputBox span {
+    position: absolute;
+    top: 1;
+    left: 1;
+    padding: 10px;
+    display: inline-block;
+    font-size: 16px;
+    color: #111;
+    font-weight: 400;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.container .inputBox input:focus~span,
+.container .inputBox input:valid~span {
+    transform: translateX(-10px) translateY(-32px);
+    font-size: 12px;
+}
+
+.container .inputBox input[type="submit"]:hover {
+    background: #B378D3;
+}
+
+/* animated checkmark*/
+
+svg {
+    width: 100px;
+    display: block;
+    margin: 40px auto 0;
+}
+
+.path-circle {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+
+    -webkit-animation: dash .9s ease-in-out;
+    animation: dash .9s ease-in-out;
+
+    stroke-dashoffset: 1000;
+    -webkit-animation: dash .9s .35s ease-in-out forwards;
+    animation: dash .9s .35s ease-in-out forwards;
+}
+
+.path-check {
+    stroke-dashoffset: -100;
+    -webkit-animation: dash-check .9s .35s ease-in-out forwards;
+    animation: dash-check .9s .35s ease-in-out forwards;
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes dash-check {
+    0% {
+        stroke-dashoffset: -100;
+    }
+
+    100% {
+        stroke-dashoffset: 900;
+    }
+}
+
+@keyframes dash-check {
+    0% {
+        stroke-dashoffset: -100;
+    }
+
+    100% {
+        stroke-dashoffset: 900;
+    }
+}
+
+/* Media */
+
+@media (min-width: 720px) {
+    main {
+        width: 95%;
+    }
+}
+
